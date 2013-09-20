@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 public class MultiplyStrings {
 
 	public static void main(String[] args) {
-		String s = multiply("0", "0");
+		String s = multiply("28", "-2");
 		System.out.println(s);
 	}
 	public static String multiply(String num1, String num2){
