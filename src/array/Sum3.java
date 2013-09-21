@@ -1,10 +1,7 @@
 package array;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
-
-import javax.naming.spi.DirStateFactory.Result;
 
 public class Sum3 {
 

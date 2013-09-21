@@ -1,6 +1,5 @@
 package string;
 
-import java.math.BigDecimal;
 
 public class MultiplyStrings {
 

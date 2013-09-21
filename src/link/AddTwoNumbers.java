@@ -1,21 +1,10 @@
 package link;
 
-import java.awt.geom.Line2D;
+import link.ListNode;
 
-//Definition for singly-linked list.
- class ListNode {
-	 int val;
-     ListNode next;
-     ListNode(int x) {
-    	 val = x;
-    	 next = null;
-    }
- }
  
 public class AddTwoNumbers {
 
-	
-	 
 	 public static ListNode addTwoNumbers(ListNode l1, ListNode l2){
 		 ListNode c1 = l1;
 		 ListNode c2 = l2;
