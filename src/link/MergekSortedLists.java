@@ -8,10 +8,12 @@ public class MergekSortedLists {
 		MergekSortedLists a = new MergekSortedLists();
 		int[] n1 = new int[]{2};
 		int[] n2 = new int[]{1,3,5};
+		int[] n3 = new int[]{-2,0,2,8,15};
 		
 		ArrayList<ListNode> list = new ArrayList<ListNode>();
 		list.add(init(n1));
 		list.add(init(n2));
+		list.add(init(n3));
 		ListNode r = a.mergeKLists(list);
 		
 		if(r!=null)
@@ -20,11 +22,44 @@ public class MergekSortedLists {
 			System.out.println("null");
 		}
 	}
-	public ListNode mergeKLists(ArrayList<ListNode> lists) {
-        // Start typing your Java solution below
-        // DO NOT write main() function
+	public ListNode mergeKLists(ArrayList<ListNode> lists) {    
         
+		while(lists.size()>1){
+			for(int i=0;i<lists.size()/2;i++){
+				lists.add(mergeTwoLists(lists.get(0), lists.get(1)));
+				lists.remove(0);
+				lists.remove(0);
+			}
+		}
+		
+		if(lists.size()==1)
+			return lists.get(0);
+		else
+			return null;
     }
+	public static ListNode mergeTwoLists(ListNode l1, ListNode l2){
+		
+		ListNode r = new ListNode(0);
+		ListNode head = r;
+		while(l1 != null && l2 != null){
+			if(l1.val<l2.val){
+				r.next = l1;
+        		l1 = l1.next;
+        		r = r.next;
+        	}else{
+        		r.next = l2;
+        		l2 = l2.next;
+        		r = r.next;
+        	}
+		}
+		
+		if(l2!=null){
+        	r.next = l2;
+        }else if(l1!=null){
+        	r.next = l1;
+        }
+        return head.next;
+	}
 	
 public static ListNode init(int[] num){
 		
