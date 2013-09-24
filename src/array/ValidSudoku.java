@@ -1,8 +1,6 @@
 package array;
 
 import java.util.HashSet;
-import java.util.Hashtable;
-import java.util.Map;
 
 public class ValidSudoku {
 

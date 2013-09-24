@@ -4,7 +4,6 @@ public class ValidNumber {
 
 	public static void main(String[] args) {
 		ValidNumber a = new ValidNumber();
-		double aa = 1e1;
 		String string = ".";
 		System.out.println(string+": "+a.isNumber(string));
 	}

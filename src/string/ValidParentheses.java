@@ -1,6 +1,5 @@
 package string;
 
-import java.awt.Checkbox;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
