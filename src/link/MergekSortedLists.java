@@ -7,22 +7,27 @@ import java.util.PriorityQueue;
 public class MergekSortedLists {
 
 	public static void main(String[] args) {
-		MergekSortedLists a = new MergekSortedLists();
-		int[] n1 = new int[]{2};
-		int[] n2 = new int[]{1,3,5};
-		int[] n3 = new int[]{-2,0,2,8,15};
+//		MergekSortedLists a = new MergekSortedLists();
+//		int[] n1 = new int[]{2};
+//		int[] n2 = new int[]{1,3,5};
+//		int[] n3 = new int[]{-2,0,2,8,15};
+//		
+//		ArrayList<ListNode> list = new ArrayList<ListNode>();
+//		list.add(init(n1));
+//		list.add(init(n2));
+//		list.add(init(n3));
+//		ListNode r = a.mergeKLists(list);
+//		
+//		if(r!=null)
+//			display(r);
+//		else {
+//			System.out.println("null");
+//		}
 		
-		ArrayList<ListNode> list = new ArrayList<ListNode>();
-		list.add(init(n1));
-		list.add(init(n2));
-		list.add(init(n3));
-		ListNode r = a.mergeKLists(list);
+		int[] n1 = new int[]{2,3};
+		ListNode a = init(n1);
 		
-		if(r!=null)
-			display(r);
-		else {
-			System.out.println("null");
-		}
+		display(a);
 	}
 	
 	
